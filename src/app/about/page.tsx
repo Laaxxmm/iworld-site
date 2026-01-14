@@ -279,12 +279,12 @@ const Careers: React.FC<CareersProps> = ({ inView }) => {
 };
 
 const Page: React.FC = () => {
-    const ourStoryRef = useRef<HTMLElement>(null);
-    const missionVisionRef = useRef<HTMLElement>(null);
-    const teamRef = useRef<HTMLElement>(null);
-    const valuesRef = useRef<HTMLElement>(null);
-    const careersRef = useRef<HTMLElement>(null);
-
+    const careersRef = useRef<HTMLDivElement>(null);
+    const ourStoryRef = useRef<HTMLDivElement>(null);
+    const missionVisionRef = useRef<HTMLDivElement>(null);
+    const teamRef = useRef<HTMLDivElement>(null);
+    const valuesRef = useRef<HTMLDivElement>(null);
+    
     const ourStoryInView = useInView(ourStoryRef, { amount: 0.2 });
     const missionVisionInView = useInView(missionVisionRef, { amount: 0.2 });
     const teamInView = useInView(teamRef, { amount: 0.2 });
