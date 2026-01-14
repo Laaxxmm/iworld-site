@@ -285,11 +285,11 @@ const Page: React.FC = () => {
     const valuesRef = useRef<HTMLElement>(null);
     const careersRef = useRef<HTMLElement>(null);
 
-    const ourStoryInView = useInView(ourStoryRef, { threshold: 0.2 });
-    const missionVisionInView = useInView(missionVisionRef, { threshold: 0.2 });
-    const teamInView = useInView(teamRef, { threshold: 0.2 });
-    const valuesInView = useInView(valuesRef, { threshold: 0.2 });
-    const careersInView = useInView(careersRef, { threshold: 0.2 });
+    const ourStoryInView = useInView(ourStoryRef, { amount: 0.2 });
+    const missionVisionInView = useInView(missionVisionRef, { amount: 0.2 });
+    const teamInView = useInView(teamRef, { amount: 0.2 });
+    const valuesInView = useInView(valuesRef, { amount: 0.2 });
+    const careersInView = useInView(careersRef, { amount: 0.2 });
 
     return (
         <div className="bg-black text-white">
